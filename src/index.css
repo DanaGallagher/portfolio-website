@@ -4,6 +4,7 @@ body {
   font-family: 'Karla', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #333;
 }
 
 code {
@@ -14,4 +15,9 @@ code {
 a {
   text-decoration: none;
   color: #2962FF;
+}
+
+p {
+  font-size: 24px;
+  line-height: 1.6;
 }
