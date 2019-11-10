@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Karla|Roboto:300,500&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Karla|Roboto:300,500&display=swap");
 
 body {
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #333;
@@ -14,7 +14,7 @@ code {
 
 a {
   text-decoration: none;
-  color: #2962FF;
+  color: #2962ff;
 }
 
 p {
