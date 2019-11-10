@@ -4,9 +4,23 @@ import db from './img/db.svg';
 import hero from './img/hero.png';
 import headerHello from './img/header-hello.png';
 import pageBreak from './img/page-break.png';
+import iconLinkedin from './img/icon-linkedin.svg';
+import iconBehance from './img/icon-behance.svg';
+import arrow from './img/arrow.svg';
+import titleArtwork from './img/title-artwork.png';
+import imgArtwork from './img/artwork.png';
+import titleCalligraphy from './img/title-calligraphy.png';
+import imgCalligraphy from './img/calligraphy.jpg';
+import titleFitted from './img/title-fitted.png';
+import imgFitted from './img/fitted.png';
+import titleMtn from './img/title-mtn.png';
+import imgMtn from './img/mtn.png';
+import titlePanasonic from './img/title-panasonic.png';
+import imgPanasonic from './img/panasonic.svg';
 import {
   HashRouter as Router,
   Route,
+  Link,
   NavLink,
   Switch
 } from 'react-router-dom';
@@ -76,6 +90,16 @@ class App extends Component {
             <div className="right-col">
               <h2>Contact</h2>
               <p>dana.s.baumgartner@gmail.com</p>
+
+              <h2>Social</h2>
+              <div class="social-links">
+                <a href="https://www.linkedin.com/in/dana-baumgartner/">
+                  <img className="social-link" src={iconLinkedin}></img>
+                </a>
+                <a href="https://www.behance.net/danabaumgartner">
+                  <img className="social-link" src={iconBehance}></img>
+                </a>
+              </div>
             </div>
           </div>
         </footer>
@@ -109,7 +133,29 @@ function Contact() {
 }
 
 function Work() {
-  return <h2>Work</h2>
+  const elements = [
+    [ imgPanasonic, titlePanasonic, 'panasonic' ],
+    [ imgMtn, titleMtn, 'mtn' ],
+    [ imgFitted, titleFitted, 'fitted' ],
+    [ imgArtwork, titleArtwork, 'artwork' ],
+    [ imgCalligraphy, titleCalligraphy, 'calligraphy' ]
+  ].map( ([ imgSrc, titleImg, routeName ]) => {
+    return <Link className="work-link" to={`/work/${routeName}`}>
+      <div>
+        <div className="img-wrapper">
+          <img src={imgSrc} />
+          <div className={`overlay work-link-${routeName}`}>
+            <img src={arrow} />
+          </div>
+        </div>
+        <img src={titleImg} />
+      </div>
+    </Link>
+  });
+
+  return <div class="work-links">
+    {elements}
+  </div>
 }
 
 export default App
