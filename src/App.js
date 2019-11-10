@@ -5,7 +5,7 @@ import hero from './img/hero.png';
 import headerHello from './img/header-hello.png';
 import pageBreak from './img/page-break.png';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   NavLink,
   Switch
@@ -15,9 +15,11 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div className="container">
+        <div className="content container">
           <header>
-            <img src={db} className="site-logo" alt="logo" />
+            <NavLink className="home-link" exact to="/">
+              <img src={db} className="site-logo" alt="logo" />
+            </NavLink>
             <nav>
               <ul>
                 <li>
