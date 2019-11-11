@@ -6,7 +6,7 @@ import "./Home.scss";
 class Home extends Component {
   render() {
     return (
-      <div>
+      <div class="container">
         <img src={hero} className="hero" alt="Hero drawing" />
 
         <section className="row hello-section">

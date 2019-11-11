@@ -12,15 +12,29 @@ import titlePanasonic from "../img/title-panasonic.png";
 import imgPanasonic from "../img/panasonic.svg";
 import { Link } from "react-router-dom";
 
+export const WORK_ROUTES = {
+  panasonic: "panasonic",
+  mtn: "mtn",
+  fitted: "fitted",
+  artwork: "artwork",
+  calligraphy: "calligraphy"
+};
+
+/**
+ * Work Items
+ * Formatted as [ Large Image, Title Image, Route name, Display name ]
+ */
+export const WORK_ITEMS = [
+  [imgPanasonic, titlePanasonic, WORK_ROUTES.panasonic, "Cirrus by Panasonic"],
+  [imgMtn, titleMtn, WORK_ROUTES.mtn, "MTN - Mountain Guide App"],
+  [imgFitted, titleFitted, WORK_ROUTES.fitted, "Fitted - Personal Fitness App"],
+  [imgArtwork, titleArtwork, WORK_ROUTES.artwork, "Artwork"],
+  [imgCalligraphy, titleCalligraphy, WORK_ROUTES.calligraphy, "Calligraphy"]
+];
+
 class Work extends Component {
   render() {
-    const elements = [
-      [imgPanasonic, titlePanasonic, "panasonic"],
-      [imgMtn, titleMtn, "mtn"],
-      [imgFitted, titleFitted, "fitted"],
-      [imgArtwork, titleArtwork, "artwork"],
-      [imgCalligraphy, titleCalligraphy, "calligraphy"]
-    ].map(([imgSrc, titleImg, routeName]) => {
+    const elements = WORK_ITEMS.map(([imgSrc, titleImg, routeName]) => {
       return (
         <Link className="work-link" to={`/work/${routeName}`}>
           <div>
@@ -36,7 +50,7 @@ class Work extends Component {
       );
     });
 
-    return <div class="work-links">{elements}</div>;
+    return <div class="container work-links">{elements}</div>;
   }
 }
 

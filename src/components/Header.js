@@ -6,7 +6,7 @@ import "./Header.scss";
 class Header extends Component {
   render() {
     return (
-      <header>
+      <header class="container">
         <NavLink className="home-link" exact to="/">
           <img src={db} className="site-logo" alt="logo" />
         </NavLink>
