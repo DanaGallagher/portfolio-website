@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f7f1dcabf3146b4cd7d5866c9a0222f2",
+    "revision": "2238b968b16f1aec872a0bcc2ae5a3ba",
     "url": "/index.html"
   },
   {
-    "revision": "45e974d5b8d12840f4de",
+    "revision": "0e4db59458ecc5591823",
     "url": "/static/css/2.764ccc25.chunk.css"
   },
   {
-    "revision": "ceb868122107cc320881",
-    "url": "/static/css/main.e7861e3e.chunk.css"
+    "revision": "6e4e5079d28af3ec301d",
+    "url": "/static/css/main.6b11af2b.chunk.css"
   },
   {
-    "revision": "45e974d5b8d12840f4de",
-    "url": "/static/js/2.32d4f098.chunk.js"
+    "revision": "0e4db59458ecc5591823",
+    "url": "/static/js/2.595ee33f.chunk.js"
   },
   {
-    "revision": "ceb868122107cc320881",
-    "url": "/static/js/main.c658297d.chunk.js"
+    "revision": "6e4e5079d28af3ec301d",
+    "url": "/static/js/main.0f4b5b9c.chunk.js"
   },
   {
     "revision": "4322a88653a79dfa1508",
@@ -62,6 +62,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "debe005fbcece8a8efe35dbd8e299b8e",
     "url": "/static/media/icon-linkedin.debe005f.svg"
+  },
+  {
+    "revision": "c8cd61a6efd1d572cdbd6270d3386ea0",
+    "url": "/static/media/mtn-header.c8cd61a6.png"
+  },
+  {
+    "revision": "4de783e4d1b2bf966cd8c0b2e9475f50",
+    "url": "/static/media/mtn-product-image.4de783e4.jpg"
   },
   {
     "revision": "e67abbc714d796330a040d35c6384919",

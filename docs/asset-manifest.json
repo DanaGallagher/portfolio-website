@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.e7861e3e.chunk.css",
-    "main.js": "/static/js/main.c658297d.chunk.js",
-    "main.js.map": "/static/js/main.c658297d.chunk.js.map",
+    "main.css": "/static/css/main.6b11af2b.chunk.css",
+    "main.js": "/static/js/main.0f4b5b9c.chunk.js",
+    "main.js.map": "/static/js/main.0f4b5b9c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2155917d.js",
     "runtime-main.js.map": "/static/js/runtime-main.2155917d.js.map",
     "static/css/2.764ccc25.chunk.css": "/static/css/2.764ccc25.chunk.css",
-    "static/js/2.32d4f098.chunk.js": "/static/js/2.32d4f098.chunk.js",
-    "static/js/2.32d4f098.chunk.js.map": "/static/js/2.32d4f098.chunk.js.map",
+    "static/js/2.595ee33f.chunk.js": "/static/js/2.595ee33f.chunk.js",
+    "static/js/2.595ee33f.chunk.js.map": "/static/js/2.595ee33f.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.ea6d3a6d5734e65143203a69f0021c93.js": "/precache-manifest.ea6d3a6d5734e65143203a69f0021c93.js",
+    "precache-manifest.dce4a6459dedb4f5541da96ca38cc661.js": "/precache-manifest.dce4a6459dedb4f5541da96ca38cc661.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.764ccc25.chunk.css.map": "/static/css/2.764ccc25.chunk.css.map",
-    "static/css/main.e7861e3e.chunk.css.map": "/static/css/main.e7861e3e.chunk.css.map",
+    "static/css/main.6b11af2b.chunk.css.map": "/static/css/main.6b11af2b.chunk.css.map",
     "static/media/arrow-black.svg": "/static/media/arrow-black.75574d3c.svg",
     "static/media/arrow.svg": "/static/media/arrow.6ec6f58b.svg",
     "static/media/artwork.png": "/static/media/artwork.1566d626.png",
@@ -23,6 +23,8 @@
     "static/media/hero.png": "/static/media/hero.49d9a59c.png",
     "static/media/icon-behance.svg": "/static/media/icon-behance.2eb58475.svg",
     "static/media/icon-linkedin.svg": "/static/media/icon-linkedin.debe005f.svg",
+    "static/media/mtn-header.png": "/static/media/mtn-header.c8cd61a6.png",
+    "static/media/mtn-product-image.jpg": "/static/media/mtn-product-image.4de783e4.jpg",
     "static/media/mtn.png": "/static/media/mtn.e67abbc7.png",
     "static/media/page-break.png": "/static/media/page-break.23499c20.png",
     "static/media/panasonic.svg": "/static/media/panasonic.19564915.svg"
@@ -30,8 +32,8 @@
   "entrypoints": [
     "static/js/runtime-main.2155917d.js",
     "static/css/2.764ccc25.chunk.css",
-    "static/js/2.32d4f098.chunk.js",
-    "static/css/main.e7861e3e.chunk.css",
-    "static/js/main.c658297d.chunk.js"
+    "static/js/2.595ee33f.chunk.js",
+    "static/css/main.6b11af2b.chunk.css",
+    "static/js/main.0f4b5b9c.chunk.js"
   ]
 }

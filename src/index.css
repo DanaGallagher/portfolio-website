@@ -20,4 +20,14 @@ a {
 p {
   font-size: 24px;
   line-height: 1.6;
+  max-width: 900px;
+}
+
+.center {
+  text-align: center;
+}
+
+p.center-align {
+  margin: 0 auto;
+  text-align: left;
 }

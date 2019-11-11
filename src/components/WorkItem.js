@@ -46,7 +46,7 @@ function createLink(item, isNext) {
       <h3>{isNext ? "Next" : "Previous"}</h3>
       <div>
         <span>{item[3]}</span>
-        <img src={arrow} className="left-arrow" />
+        <img src={arrow} className="left-arrow" alt="Arrow" />
       </div>
     </Link>
   );

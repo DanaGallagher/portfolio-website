@@ -43,6 +43,13 @@ section.row {
   }
 }
 
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  letter-spacing: 4px;
+  font-size: 28px;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
