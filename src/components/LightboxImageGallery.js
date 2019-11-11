@@ -1,7 +1,4 @@
 import React, { Component } from "react";
-import workItem from "./WorkItem";
-import { WORK_ROUTES } from "./Work";
-import calligraphyHeader from "../img/calligraphy-header.png";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 

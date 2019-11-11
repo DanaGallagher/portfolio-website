@@ -85,6 +85,74 @@ class Mtn extends Component {
             </div>
             <img src="http://placehold.jp/792x753.png" />
           </div>
+
+          <div className="image-explain">
+            <img src="http://placehold.jp/887x665.png" />
+            <div>
+              <h2>User Research</h2>
+              <p>
+                I completed user research by interviewing individuals who have
+                mountain sport experience. From the responses received, I
+                identified pain points and frustrations using an affinity map.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex">
+            <div>
+              <h2>User Personas</h2>
+              <p>
+                Based on the information gained from the competitor and user
+                research, I created user personas to represent the different
+                types of people that could benefit from the app.
+              </p>
+
+              <img src="http://placehold.jp/480x371.png" />
+              <img src="http://placehold.jp/480x371.png" />
+              <img src="http://placehold.jp/480x371.png" />
+            </div>
+            <div>
+              <h2>User Flows</h2>
+              <p>
+                User personas were then translated into the initial user flows.
+                The flow follows the user in the necessary steps to complete the
+                designated task from entry point to the success criteria.
+              </p>
+
+              <img src="http://placehold.jp/565x371.png" />
+              <img src="http://placehold.jp/565x371.png" />
+              <img src="http://placehold.jp/565x371.png" />
+            </div>
+          </div>
+        </div>
+
+        <div className="pink-section">
+          <div className="container">
+            <div className="image-explain">
+              <div>
+                <h2>Site Map</h2>
+                <p>
+                  The site map visualizes the information architecture of the
+                  app. The information architecture was first theorized with the
+                  user flows and refined using an open card sort with a total of
+                  6 participants.
+                </p>
+              </div>
+              <img src="http://placehold.jp/900x1327.png" />
+            </div>
+          </div>
+        </div>
+
+        <div className="center container">
+          <h2>Sketching and Wireframes</h2>
+          <p className="center-align">
+            MTN is a mobile app that looks to inform mountain enthusiasts and
+            travelers of weather conditions and active mountain hazards. The app
+            brings pertinent weather and hazard information to one convenient
+            location and helps users plan and implement safe trips. The app will
+            ultimately create a community of people who enjoy spending their
+            free time in the great outdoors!
+          </p>
         </div>
       </React.Fragment>
     );
