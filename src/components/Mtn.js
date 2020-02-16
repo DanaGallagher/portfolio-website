@@ -153,6 +153,42 @@ class Mtn extends Component {
             ultimately create a community of people who enjoy spending their
             free time in the great outdoors!
           </p>
+
+          <div className="inline-images">
+            <img src="http://placehold.jp/900x675.png" />
+            <img src="http://placehold.jp/506x675.png" />
+          </div>
+
+          <div className="inline-images">
+            <img src="http://placehold.jp/621x388.png" />
+            <img src="http://placehold.jp/599x387.png" />
+          </div>
+
+          <div className="inline-images">
+            <img src="http://placehold.jp/617x395.png" />
+            <img src="http://placehold.jp/406x396.png" />
+          </div>
+        </div>
+
+        <div className="pink-section">
+          <div className="container center">
+            <h2>Mid-Fidelity</h2>
+            <p className="center-align">
+              Initial prototype was generated using the mid-fidelity sketch
+              wireframes and were animated with Invision. User interviews were
+              conducted to see if there were any major usability issues.
+              Furthermore, an A/B preference test was completed to test the
+              layout of the home screen. For an in-depth look at the
+              documentation of the user interviews and A/B test refer to the
+              link below: User Testing Documentation
+            </p>
+
+            <img src="http://placehold.jp/375x667.png" />
+            <img src="http://placehold.jp/375x667.png" />
+            <img src="http://placehold.jp/375x667.png" />
+            <img src="http://placehold.jp/375x667.png" />
+            <img src="http://placehold.jp/375x667.png" />
+          </div>
         </div>
       </React.Fragment>
     );

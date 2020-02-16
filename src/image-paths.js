@@ -46,4 +46,19 @@ export const ARTWORK_IMAGES = [
     width:393,
     height:524
   },
+  {
+    src:"watercolor-plant-1.jpg",
+    width:1602,
+    height:1069
+  },
+  {
+    src:"watercolor-plant-2.jpg",
+    width:1602,
+    height:1069
+  },
+  {
+    src:"watercolor-tree.jpg",
+    width:1602,
+    height:1069
+  },
 ];

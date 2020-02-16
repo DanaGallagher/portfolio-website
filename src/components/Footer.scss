@@ -1,68 +1,84 @@
 footer {
   font-family: "Roboto", sans-serif;
-  background: #f2d7d4;
   padding: 64px 32px;
 
   .container {
     display: flex;
-    min-height: 320px;
+    min-height: 150px;
     align-items: center;
 
     nav {
-      display: block;
-      font-family: "Roboto", sans-serif;
       font-weight: 500;
       font-size: 18px;
       letter-spacing: 4px;
       text-transform: uppercase;
+      margin: auto;
 
       ul {
+        display: flex;
         list-style: none;
         margin: 0;
         padding: 0;
+        align-items: center;
+        justify-content: center;
 
         li {
+          &:not(:last-child)::after {
+            content: "/";
+          }
+
           a {
             display: inline-block;
             color: #333;
             padding: 8px 16px;
+            margin: 0 48px;
             outline: 0;
+            position: relative;
+
+            &::after {
+              $width: 70%;
+
+              content: "";
+              width: $width;
+              height: 3px;
+              display: inline-block;
+              opacity: 0;
+              border-radius: 2px;
+              position: absolute;
+              left: calc(50% - #{$width}/ 2);
+              bottom: 0px;
+              transition: opacity 150ms ease-out, transform 150ms ease-out;
+              transform: translateY(-4px);
+            }
+
+            &:hover,
+            &:focus {
+              &::after {
+                opacity: 1;
+                transform: translateY(0);
+              }
+            }
+
+            &.home-link:hover::after,
+            &.home-link:focus::after {
+              background: #f9d29f;
+            }
+
+            &.about-link:hover::after,
+            &.about-link:focus::after {
+              background: #c6e4b8;
+            }
+
+            &.resume-link:focus::after,
+            &.resume-link:hover::after {
+              background: #f7e594;
+            }
+
+            &.contact-link:focus::after,
+            &.contact-link:hover::after {
+              background: #ecbdb4;
+            }
           }
-        }
-      }
-    }
-
-    nav,
-    .right-col {
-      flex: 1 1 0;
-    }
-
-    img {
-      flex: 2 1 0;
-    }
-
-    nav,
-    .right-col {
-      padding: 0 64px;
-    }
-
-    .page-break {
-      width: 540px;
-      display: block;
-      margin: auto;
-      padding: 32px 64px;
-      opacity: 0.5;
-    }
-
-    .social-links {
-      a {
-        margin-right: 12px;
-
-        .social-link {
-          display: inline-block;
-          width: 44px;
-          height: 44px;
-          opacity: 0.8;
         }
       }
     }

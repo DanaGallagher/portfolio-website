@@ -64,9 +64,9 @@ header {
             background: #f9d29f;
           }
 
-          &.work-link.active::after,
-          &.work-link:hover::after,
-          &.work-link:focus::after {
+          &.about-link.active::after,
+          &.about-link:hover::after,
+          &.about-link:focus::after {
             background: #c6e4b8;
           }
 

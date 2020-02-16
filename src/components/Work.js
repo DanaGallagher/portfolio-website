@@ -50,7 +50,7 @@ class Work extends Component {
       );
     });
 
-    return <div class="container work-links">{elements}</div>;
+    return <div class="work-links">{elements}</div>;
   }
 }
 

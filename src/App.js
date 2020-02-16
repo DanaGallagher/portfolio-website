@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.scss";
-import Work, { WORK_ROUTES } from "./components/Work";
+import { WORK_ROUTES } from "./components/Work";
+import About from "./components/About";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Panasonic from "./components/Panasonic";
@@ -42,8 +43,8 @@ class App extends Component {
             <Route path={`/work/${WORK_ROUTES.calligraphy}`}>
               <Calligraphy />
             </Route>
-            <Route path="/work">
-              <Work />
+            <Route path={`/about`}>
+              <About />
             </Route>
             <Route path="/">
               <Home />
