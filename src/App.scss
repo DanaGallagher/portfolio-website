@@ -1,21 +1,31 @@
-#root {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/form.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/layout/hero.sass";
+@import "../node_modules/bulma/sass/layout/section.sass";
 
-  .content {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-  }
-}
+// #root {
+//   display: flex;
+//   min-height: 100vh;
+//   flex-direction: column;
 
-.container {
-  width: 100%;
-  max-width: 1720px;
-  margin: 0 auto;
-  padding-left: calc(100vw - 100%); // Scrollbar page jank prevention
-}
+//   .content {
+//     display: flex;
+//     flex-direction: column;
+//     flex: 1;
+//   }
+// }
+
+// .container {
+//   width: 100%;
+//   max-width: 1720px;
+//   margin: 0 auto;
+//   padding-left: calc(100vw - 100%); // Scrollbar page jank prevention
+// }
 
 section.row {
   display: flex;

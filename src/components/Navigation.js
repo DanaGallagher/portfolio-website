@@ -1,11 +1,31 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 
+export const NAVIGATION_LINKS = [
+  { name: "Home", className: "home", route: "/" },
+  { name: "About", className: "about", route: "/about" },
+  { name: "Resume", className: "resume", route: "/resume" },
+  { name: "Contact", className: "contact", route: "/contact" }
+];
+
 export default class Footer extends Component {
+  renderNavLinks = () => {
+    return NAVIGATION_LINKS.map(link => {
+      return (
+        <li>
+          <NavLink className={`${link.className}-link`} exact to={link.route}>
+            {link.name}
+          </NavLink>
+        </li>
+      );
+    });
+  };
+
   render() {
     return (
       <nav>
         <ul>
+          {}
           <li>
             <NavLink className="home-link" exact to="/">
               Home
