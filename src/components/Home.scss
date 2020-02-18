@@ -1,9 +1,16 @@
+@import "./node_modules/bulma/sass/utilities/_all.sass";
+
 .hero {
   margin: auto;
   display: block;
   animation: slideUpFadeIn 1s;
   animation-iteration-count: 1;
   animation-timing-function: ease-out;
+  padding: 0 16px;
+
+  @media screen and (min-width: $desktop) {
+    margin: 0;
+  }
 }
 
 .hello-section {

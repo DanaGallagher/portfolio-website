@@ -1,6 +1,4 @@
-.mtn-header {
-  margin-top: 96px;
-}
+@import "./node_modules/bulma/sass/utilities/_all.sass";
 
 .mtn-product-image {
   margin: 16px 0 40px;
@@ -24,18 +22,45 @@
   }
 }
 
+.text-center {
+  text-align: center;
+}
+
 .image-explain {
   display: flex;
-  padding: 64px 32px;
+  margin-bottom: 128px;
 
-  *:first-child {
-    padding-right: 156px;
-  }
-
-  div {
-    text-align: left;
-    flex: 1;
-    display: flex;
+  @media screen and (max-width: $desktop) {
     flex-direction: column;
   }
+
+  .image-explain__image {
+    margin: auto;
+
+    @media screen and (max-width: $desktop) {
+      order: -1;
+      margin-bottom: 16px;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    & > *:first-child {
+      padding-right: 156px;
+    }
+  }
+}
+
+.description-box {
+  height: 300px;
+}
+
+.users-image {
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.text-section {
+  max-width: 900px;
+  margin: auto;
+  margin-bottom: 128px;
 }

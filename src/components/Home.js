@@ -9,7 +9,11 @@ class Home extends Component {
       <div class="container">
         <img src={hero} className="hero" alt="Hero drawing" />
 
-        <Work />
+        <section className="section">
+          <div className="container">
+            <Work />
+          </div>
+        </section>
       </div>
     );
   }

@@ -1,8 +1,14 @@
+@import "./node_modules/bulma/sass/utilities/_all.sass";
+
 .work-links {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 64px;
+
+  @media screen and (max-width: $desktop) {
+    flex-direction: column;
+  }
 
   .work-link {
     $trasitionSpeed: 150ms;
@@ -14,11 +20,11 @@
     div .img-wrapper {
       position: relative;
       overflow: hidden;
-      width: 400px;
-      height: 400px;
       background: #0002;
       border-radius: 4px;
       filter: blur(0);
+      max-width: 400px;
+      max-height: 400px;
 
       & > img {
         transition: filter $trasitionSpeed ease-out,

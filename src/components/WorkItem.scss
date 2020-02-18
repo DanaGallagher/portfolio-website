@@ -1,3 +1,5 @@
+@import "./node_modules/bulma/sass/utilities/_all.sass";
+
 .work-content {
   flex: 1;
 }
@@ -7,21 +9,33 @@
     display: flex;
     justify-content: space-between;
 
+    @media screen and (max-width: $desktop) {
+      flex-direction: column;
+    }
+
     a.work-nav-button {
       flex: none;
       color: rgba(0, 0, 0, 0.8);
-      padding: 0 32px 32px 32px;
+      padding: 0 0 32px 0;
 
       h3 {
         font-family: "Roboto", sans-serif;
         font-weight: 300;
         letter-spacing: 4px;
-        font-size: 32px;
+        font-size: 28px;
+
+        @media screen and (max-width: $desktop) {
+          font-size: 18px;
+        }
       }
 
       div {
-        font-size: 40px;
+        font-size: 34px;
         display: flex;
+
+        @media screen and (max-width: $desktop) {
+          font-size: 24px;
+        }
 
         span {
           flex: 1;

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
-import Navigation, { NAVIGATION_LINKS } from "./Navigation";
+import { NAVIGATION_LINKS } from "./Navigation";
 import db from "../img/db.svg";
 import "./Header.scss";
 
@@ -36,15 +36,6 @@ export default class Header extends Component {
     const { menuOpen } = this.state;
 
     return (
-      // <navbar>
-      //   <div classname="container">
-      //     <NavLink className="home-link" exact to="/">
-      //       <img src={db} className="site-logo" alt="logo" />
-      //     </NavLink>
-      //     <Navigation />
-      //   </div>
-      // </navbar>
-
       <nav
         className="navbar site-header"
         role="navigation"
@@ -61,6 +52,7 @@ export default class Header extends Component {
               className={`navbar-burger burger ${menuOpen ? "is-active" : ""}`}
               aria-label="menu"
               aria-expanded="false"
+              href="/#"
               onClick={this.toggleMenu}
             >
               <span aria-hidden="true"></span>

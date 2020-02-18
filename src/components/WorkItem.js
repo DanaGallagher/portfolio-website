@@ -61,12 +61,14 @@ function workItem(WrappedComponent, currentRoute) {
             <WrappedComponent {...this.props} />
           </div>
 
-          <div className="previous-next-navigation-wrapper">
-            <div className="previous-next-navigation container">
-              {createPreviousLink(currentRoute)}
-              {createNextLink(currentRoute)}
+          <section className="section">
+            <div className="previous-next-navigation-wrapper">
+              <div className="previous-next-navigation container">
+                {createPreviousLink(currentRoute)}
+                {createNextLink(currentRoute)}
+              </div>
             </div>
-          </div>
+          </section>
         </React.Fragment>
       );
     }

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { WORK_ROUTES } from "./components/Work";
+import ScrollToTop from "./components/ScrollToTop";
 import About from "./components/About";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
@@ -14,10 +15,11 @@ import Header from "./components/Header";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.scss";
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
-      <Router>
+      <Router onUpdate={() => window.scrollTo(0, 0)}>
+        <ScrollToTop />
         <Header />
 
         <Switch>
@@ -55,5 +57,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;
